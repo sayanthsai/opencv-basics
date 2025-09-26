@@ -1,0 +1,13 @@
+import cv2   # Import OpenCV library
+
+# Read an image from file
+img = cv2.imread("example.jpg")   # Replace with your image filename
+
+# Show the image in a new window
+cv2.imshow("Image", img)
+
+# Wait until a key is pressed (0 = wait forever)
+cv2.waitKey(0)
+
+# Close all OpenCV windows
+cv2.destroyAllWindows()
