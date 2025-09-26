@@ -1,0 +1,16 @@
+import cv2
+
+# Load image
+img = cv2.imread("example.jpg")
+
+# Write text on the image
+cv2.putText(img, "Hello OpenCV!", (50, 100),    # Position (x,y)
+            cv2.FONT_HERSHEY_SIMPLEX,           # Font type
+            2,                                  # Font scale (size)
+            (255, 255, 255),                    # Color (white)
+            3)                                  # Thickness
+
+# Show image with text
+cv2.imshow("Text", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
